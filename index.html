@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hockey Club</title>
+
+    <!-- tailwind and daisi cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Manrope fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/bd515b3d82.js" crossorigin="anonymous"></script>
+
+    <style>
+        .manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="manrope">
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost sm:text-lg lg:text-4xl font-extrabold">My Hockey Club</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn btn-error font-bold text-white">Button</a>
+                </div>
+            </div>
+        </nav>
+        <!-- slider section -->
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="h-4/5 w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+        </section>
+    </header>
+    <main>
+        <!-- program section -->
+        <section>
+            <div class="text-center mt-16">
+                <h3 class="font-extrabold text-4xl">Program Sections</h3>
+                <p class="mt-6">
+                    Here is some description about the program section that means if anyone want to join with us then
+                    <br>
+                    it will help him to take decission that which kind of program he want to join. Please read below
+                    carefully.
+                </p>
+            </div>
+            <!-- card section -->
+            <div class="mt-16 lg:flex lg:justify-center gap-6">
+                <div class="card mb-6 w-96 bg-base-100 shadow-xl image-full">
+                    <figure><img src="Images/2.png" alt="junior program" /></figure>
+                    <div class="card-body pt-20">
+                        <h2 class="card-title font-extrabold text-3xl">Junior Program</h2>
+                        <p class="font-medium">You can check here to know something about junior program.</p>
+                        <div class="card-actions ">
+                            <button class="btn btn-error">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-96 mb-6 bg-base-100 shadow-xl image-full">
+                    <figure><img src="Images/3.png" alt="Teenager Program" /></figure>
+                    <div class="card-body pt-20">
+                        <h2 class="card-title font-extrabold text-3xl">Teenager Program</h2>
+                        <p class="font-medium">You can check here to know something about teenager program.</p>
+                        <div class="card-actions ">
+                            <button class="btn btn-error">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex lg:justify-center">
+                <div class="card lg:max-w-3xl  bg-base-100 shadow-xl image-full">
+                    <figure><img src="Images/4.png" alt="Professional Program" /></figure>
+                    <div class="card-body pt-20">
+                        <h2 class="card-title font-extrabold text-3xl">Professional Program</h2>
+                        <p class="font-medium">You can check here to know something about proffesional program.</p>
+                        <div class="card-actions ">
+                            <button class="btn btn-error">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our new products -->
+        <section>
+            <div class="text-center mt-20">
+                <h3 class="font-extrabold text-4xl text-[#131318] mb-5">Our New Products</h3>
+                <p class="text-center mb-10 font-medium text-[#13131899]">Here is some of our popular products with 5 star
+                    rating, a comfortable and good
+                    price
+                    <br>
+                    and delevery free also.
+                </p>
+            </div>
+            <div>
+                <div class="lg:flex lg:mx-20 justify-center gap-7">
+                    <!-- first card -->
+                    <div class="card pl-4 mb-6 lg:card-side -p-5 bg-base-100 shadow-xl">
+                        <figure><img class="h-3/4 rounded-md" src="Images/5.png" alt="Album" /></figure>
+                        <div class="card-body">
+                            <div class="flex gap-10">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid mt-1 text-[#F99808] fa-star"></i>
+                                    <p class="text-[#13131899]">5.0</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular text-[#13131899] mt-1 fa-eye"></i>
+                                    <p class="text-[#13131899]">20</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular mt-1 text-[#13131899] fa-heart"></i>
+                                    <p class="text-[#13131899]">200</p>
+                                </div>
+                            </div>
+                            <h2 class="card-title">World Cup Flags Football</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                            <div class="flex justify-between">
+                                <h5 class="text-red-500 font-extrabold text-xl">Price - $22.00</h5>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid my-1 text-[#13131899] fa-cart-flatbed"></i>
+                                    <p class="font-medium text-[#13131899]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second card -->
+                    <div class="card pl-4 mb-6 lg:card-side -p-5 bg-base-100 shadow-xl">
+                        <figure><img class="h-3/4 rounded-md" src="Images/6.png" alt="Album" /></figure>
+                        <div class="card-body">
+                            <div class="flex gap-10">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid mt-1 text-[#F99808] fa-star"></i>
+                                    <p class="text-[#13131899]">5.0</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular text-[#13131899] mt-1 fa-eye"></i>
+                                    <p class="text-[#13131899]">20</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular mt-1 text-[#13131899] fa-heart"></i>
+                                    <p class="text-[#13131899]">200</p>
+                                </div>
+                            </div>
+                            <h2 class="card-title">World Cup Flags Football</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                            <div class="flex justify-between">
+                                <h5 class="text-red-500 font-extrabold text-xl">Price - $22.00</h5>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid my-1 text-[#13131899] fa-cart-flatbed"></i>
+                                    <p class="font-medium text-[#13131899]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:flex lg:mx-20 justify-center gap-7">
+                    <!-- third card -->
+                    <div class="card pl-4 mb-6 lg:card-side -p-5 bg-base-100 shadow-xl">
+                        <figure><img class="h-3/4 rounded-md" src="Images/7.png" alt="Album" /></figure>
+                        <div class="card-body">
+                            <div class="flex gap-10">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid mt-1 text-[#F99808] fa-star"></i>
+                                    <p class="text-[#13131899]">5.0</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular text-[#13131899] mt-1 fa-eye"></i>
+                                    <p class="text-[#13131899]">20</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular mt-1 text-[#13131899] fa-heart"></i>
+                                    <p class="text-[#13131899]">200</p>
+                                </div>
+                            </div>
+                            <h2 class="card-title">World Cup Flags Football</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                            <div class="flex justify-between">
+                                <h5 class="text-red-500 font-extrabold text-xl">Price - $22.00</h5>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid my-1 text-[#13131899] fa-cart-flatbed"></i>
+                                    <p class="font-medium text-[#13131899]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fourth card -->
+                    <div class="card pl-4 mb-6 lg:card-side -p-5 bg-base-100 shadow-xl">
+                        <figure><img class="h-3/4 rounded-md" src="Images/8.png" alt="Album" /></figure>
+                        <div class="card-body">
+                            <div class="flex gap-10">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid mt-1 text-[#F99808] fa-star"></i>
+                                    <p class="text-[#13131899]">5.0</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular text-[#13131899] mt-1 fa-eye"></i>
+                                    <p class="text-[#13131899]">20</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular mt-1 text-[#13131899] fa-heart"></i>
+                                    <p class="text-[#13131899]">200</p>
+                                </div>
+                            </div>
+                            <h2 class="card-title">World Cup Flags Football</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                            <div class="flex justify-between">
+                                <h5 class="text-red-500 font-extrabold text-xl">Price - $22.00</h5>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid my-1 text-[#13131899] fa-cart-flatbed"></i>
+                                    <p class="font-medium text-[#13131899]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:flex lg:mx-20 justify-center gap-7">
+                    <!-- fifth card -->
+                    <div class="card pl-4 mb-6 lg:card-side -p-5 bg-base-100 shadow-xl">
+                        <figure><img class="h-3/4 rounded-md" src="Images/9.png" alt="Album" /></figure>
+                        <div class="card-body">
+                            <div class="flex gap-10">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid mt-1 text-[#F99808] fa-star"></i>
+                                    <p class="text-[#13131899]">5.0</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular text-[#13131899] mt-1 fa-eye"></i>
+                                    <p class="text-[#13131899]">20</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular mt-1 text-[#13131899] fa-heart"></i>
+                                    <p class="text-[#13131899]">200</p>
+                                </div>
+                            </div>
+                            <h2 class="card-title">World Cup Flags Football</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                            <div class="flex justify-between">
+                                <h5 class="text-red-500 font-extrabold text-xl">Price - $22.00</h5>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid my-1 text-[#13131899] fa-cart-flatbed"></i>
+                                    <p class="font-medium text-[#13131899]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sixthd card -->
+                    <div class="card pl-4 mb-6 lg:card-side -p-5 bg-base-100 shadow-xl">
+                        <figure><img class="h-3/4 rounded-md" src="Images/10.png" alt="Album" /></figure>
+                        <div class="card-body">
+                            <div class="flex gap-10">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid mt-1 text-[#F99808] fa-star"></i>
+                                    <p class="text-[#13131899]">5.0</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular text-[#13131899] mt-1 fa-eye"></i>
+                                    <p class="text-[#13131899]">20</p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <i class="fa-regular mt-1 text-[#13131899] fa-heart"></i>
+                                    <p class="text-[#13131899]">200</p>
+                                </div>
+                            </div>
+                            <h2 class="card-title">World Cup Flags Football</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                            <div class="flex justify-between">
+                                <h5 class="text-red-500 font-extrabold text-xl">Price - $22.00</h5>
+                                <div class="flex gap-2">
+                                    <i class="fa-solid my-1 text-[#13131899] fa-cart-flatbed"></i>
+                                    <p class="font-medium text-[#13131899]">Delivery Fee : Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer py-24 px-28 bg-black mt-20 text-white">
+        <nav class="">
+            <h4 class="font-extrabold text-3xl">Get In Touch</h4>
+            <p class="text-[#ffffff99] font-medium">
+                There are our contact number. You can contact with us via email or phone.
+                <br>
+                For email and phone numbers you can check below.
+            </p>
+            <a class="link link-hover font-medium text-[#ffffff99]">hockeys@support.com</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">(+62) 123-321-543</a>
+        </nav>
+        <nav>
+            <h6 class="font-bold text-xl">Company</h6>
+            <a class="link link-hover font-medium text-[#ffffff99]">About us</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">Leadership</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">Career</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">News and Article</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">Legal Notice</a>
+        </nav>
+        <nav>
+            <h6 class="font-bold text-xl">Support</h6>
+            <a class="link link-hover font-medium text-[#ffffff99]">Help center</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">FAQ</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">Ticket Support</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">Contact Us</a>
+        </nav>
+        <nav>
+            <h6 class="font-bold text-xl">Services</h6>
+            <a class="link link-hover font-medium text-[#ffffff99]">Terms of use</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">Academy</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">Group Lesson</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">Private Lesson</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">Hockey's for kids</a>
+            <a class="link link-hover font-medium text-[#ffffff99]">Hockey's for adult</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
